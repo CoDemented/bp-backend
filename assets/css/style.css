@@ -1,164 +1,218 @@
 /* --------------------------------------------------------------------------------------------Menu */
-@media(min-width: 992px){
-    .dropdown:hover  .dropdown-toggle::after {
-        animation: move 4s ease-in-out 1;
-        }
-        @keyframes move {
-            15% {
-                transform: rotate(-92deg);
-                color: #000000;
-            }
-            30% {
-                transform: rotate(0deg);
-                color: #fff;
-            }
-            45% {
-                transform: rotate(92deg);
-                color: #000000;
-            }
-            60% {
-                transform: rotate(0deg);
-                color: #fff;
-            }
-        }
-}
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 555;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.top-line {
+  width: 100%;
+  border-bottom: #002e63 3px solid;
+  position: relative;
+  text-align: center; }
+  .top-line span {
+    width: 100%;
+    background: #002e63;
+    height: 207px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-top: 2px solid #ebbf2a;
+    animation: lineAnim 1s ease-in-out 4s forwards; }
+@keyframes lineAnim {
+  100% {
+    background: #002e63;
+    height: 0px;
+    border-color: transparent; } }
+.shadows {
+  position: relative;
+  text-shadow: -15px 5px 20px #ced0d3;
+  color: white;
+  letter-spacing: -0.05em;
+  font-family: 'Anton', Arial, sans-serif;
+  user-select: none;
+  font-size: 85px;
+  transition: all 0.25s ease-out;
+  text-align: center;
+  font-weight: 800;
+  /*padding-bottom: 8px;*/ }
+
+.shadows:hover {
+  text-shadow: -16px 6px 15px #ced0d3;
+  color: #fdf7e4; }
+
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-toggle::after {
+    animation: move 4s ease-in-out 1; }
+
+  @keyframes move {
+    15% {
+      transform: rotate(-92deg);
+      color: #ebbf2a; }
+    30% {
+      transform: rotate(0deg);
+      color: #fff; }
+    45% {
+      transform: rotate(92deg);
+      color: #ebbf2a; }
+    60% {
+      transform: rotate(0deg);
+      color: #fff; } } }
+#navbarSupportedContent > ul > li.active > a {
+  font-size: 31px;
+  padding: 0 10px; }
+
 .menu-area {
-    background: #09326a
-}
-
+  background: #002e63;
+  border-bottom: 2px solid #ebbf2a;
+  animation: menuBg 1s ease-in 5s forwards; }
+@keyframes menuBg {
+  100% {
+    background: transparent; } }
 .dropdown-menu {
-    padding: 0;
-    margin: 0;
-    border: 0 solid transition !important;
-    border: 0 solid rgba(0, 0, 0, .15);
-    border-radius: 0;
-    -webkit-box-shadow: none !important;
-    box-shadow: 0px 0px 2px 0px #333 !important;
-}
+  padding: 0;
+  margin: 0;
+  border: 0 solid transition !important;
+  border: 0 solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  -webkit-box-shadow: none !important;
+  letter-spacing: .5px;
+  transform: translate(0px, 30px);
+  opacity: 0; }
 
+li.dropdown:hover .dropdown-menu {
+  animation: menuAn .2s ease-in-out forwards; }
+@keyframes menuAn {
+  70% {
+    opacity: .2; }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: opacity 1s ease-out !important; } }
+#navbarSupportedContent > ul > li {
+  animation: mRight 1s ease-in 5s forwards; }
+@keyframes mRight {
+  50% {
+    margin-right: 10px; }
+  100% {
+    margin-right: 5px; } }
 .mainmenu a,
-.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav > li > a,
 .mainmenu ul li a,
 .navbar-expand-lg .navbar-nav .nav-link {
-    color: #fff;
-    font-size: 16px;
-    text-transform: capitalize;
-    padding: 12px 20px;
-    font-family: 'Roboto', sans-serif;
-    display: block !important;
-}
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  font-family: 'Roboto', sans-serif;
+  display: block !important;
+  text-shadow: 0 0 1px #000;
+  background: #002e63; }
 
 .mainmenu .active a,
 .mainmenu .active a:focus,
 .mainmenu .active a:hover,
 .mainmenu li a:hover,
 .mainmenu li a:focus,
-.navbar-default .navbar-nav>.show>a,
-.navbar-default .navbar-nav>.show>a:focus,
-.navbar-default .navbar-nav>.show>a:hover {
-    color: #fff;
-    background: #dc3545;
-    outline: 0;
-}
+.navbar-default .navbar-nav > .show > a,
+.navbar-default .navbar-nav > .show > a:focus,
+.navbar-default .navbar-nav > .show > a:hover {
+  color: #002e63;
+  background: #ebbf2a;
+  outline: 0; }
 
 /*==========Sub Menu=v==========*/
-.mainmenu .collapse ul>li:hover>a {
-    background: #dc3545;
-    text-decoration: none;
-}
+.mainmenu .collapse ul > li:hover > a {
+  background: #ebbf2a;
+  text-decoration: none; }
 
-.mainmenu .collapse ul ul>li:hover>a,
-.navbar-default .navbar-nav .show .dropdown-menu>li>a:focus,
-.navbar-default .navbar-nav .show .dropdown-menu>li>a:hover {
-    background: #dc3545;
-}
+.mainmenu .collapse ul ul > li:hover > a,
+.navbar-default .navbar-nav .show .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav .show .dropdown-menu > li > a:hover {
+  background: #ebbf2a; }
 
-.mainmenu .collapse ul ul ul>li:hover>a {
-    background: #dc3545;
-}
-
-.mainmenu .collapse ul ul,
-.mainmenu .collapse ul ul.dropdown-menu {
-    background: #002e63
-}
-
-.mainmenu .collapse ul ul ul,
-.mainmenu .collapse ul ul ul.dropdown-menu {
-    background: #012a58
-}
-
-.mainmenu .collapse ul ul ul ul,
-.mainmenu .collapse ul ul ul ul.dropdown-menu {
-    background: #002044
-}
+.mainmenu .collapse ul ul ul > li:hover > a {
+  background: #ebbf2a; }
 
 /******************************Drop-down menu work on hover**********************************/
 .mainmenu {
-    background: none;
-    border: 0 solid;
-    margin: 0;
-    padding: 0;
-    min-height: 20px;
-    width: 100%;
-}
+  background: none;
+  border: 0 solid;
+  margin: 0;
+  padding: 0;
+  min-height: 20px;
+  width: 100%; }
 
 @media only screen and (min-width: 767px) {
-    .mainmenu .collapse ul li:hover>ul {
-        display: block
-    }
+  .mainmenu .collapse ul li:hover > ul {
+    display: block; }
 
-    .mainmenu .collapse ul ul {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        min-width: 250px;
-        display: none
-    }
+  .mainmenu .collapse ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    display: none; }
 
-    /*******/
-    .mainmenu .collapse ul ul li {
-        position: relative
-    }
+  /*******/
+  .mainmenu .collapse ul ul li {
+    position: relative;
+    transform: translate(0px, -5px);
+    margin-top: 5px; }
 
-    .mainmenu .collapse ul ul li:hover>ul {
-        display: block
-    }
+  #navbarSupportedContent > ul > li.dropdown > ul > li:nth-child(1) {
+    margin-top: 10px; }
 
-    .mainmenu .collapse ul ul ul {
-        position: absolute;
-        top: 0;
-        left: 100%;
-        min-width: 250px;
-        display: none
-    }
+  .mainmenu .collapse ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 250px;
+    display: none; }
 
-    /*******/
-    .mainmenu .collapse ul ul ul li {
-        position: relative
-    }
+  /*******/
+  .mainmenu .collapse ul ul ul li {
+    position: relative; }
 
-    .mainmenu .collapse ul ul ul li:hover ul {
-        display: block
-    }
+  .mainmenu .collapse ul ul ul li:hover ul {
+    display: block; }
 
-    .mainmenu .collapse ul ul ul ul {
-        position: absolute;
-        top: 0;
-        left: -100%;
-        min-width: 250px;
-        display: none;
-        z-index: 1
-    }
-
-}
-
+  .mainmenu .collapse ul ul ul ul {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    min-width: 250px;
+    display: none;
+    z-index: 1; } }
 @media only screen and (max-width: 767px) {
-    .navbar-nav .show .dropdown-menu .dropdown-menu>li>a {
-        padding: 16px 15px 16px 35px
-    }
+  .navbar-nav .show .dropdown-menu .dropdown-menu > li > a {
+    padding: 16px 15px 16px 35px; }
 
-    .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu>li>a {
-        padding: 16px 15px 16px 45px
-    }
-}
+  .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu > li > a {
+    padding: 16px 15px 16px 45px; } }
 /* --------------------------------------------------------------------------------------------Menu */
+.canBox {
+  position: relative;
+  top: 0; }
+
+canvas {
+  background-image: url("imgs/codeBgCanvas.jpg");
+  background-color: #333;
+  background-size: cover;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  z-index: -1; }
+
+code {
+  padding: 30px 0;
+  font-size: 20px; }
+
+/*# sourceMappingURL=style.css.map */

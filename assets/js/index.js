@@ -19,10 +19,16 @@ $(document).ready(function(){
     
         return false;
       });
-    })(jQuery)
+    })(jQuery) });
 // ------------------------------------------------ Menu
 
- });
 
+// --------- Preloader
+window.addEventListener('load', function () {
+  $(document).ready(function () {
+      $(".loading").fadeOut();
+  });
+})
+// --------- Preloader
 
  
