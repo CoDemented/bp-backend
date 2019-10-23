@@ -5,6 +5,7 @@
     define("_plugins", _siteUrl."assets/plugins/");
     
     define("_phpBasic", _siteUrl."include/php/basic/");
+    define("_phpAdvance", _siteUrl."include/php/advance/");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,12 +22,12 @@
 
 <body><div class="loading"><img src="<?php echo _css;?>imgs/loader.gif" alt=""></div>
 
-<!--    <div class="top-line"><span></span></div>
+   <div class="top-line"><span></span></div>
     <div class="container">
         <div class="shadows">
             <span>C</span><span>o</span><span>D</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>e</span><span>d</span>
         </div>
-    </div>-->
+    </div>
 
     <!-- ----------------------------------Top Navigations -->
     <div id="menu_area" class="menu-area">
@@ -61,9 +62,9 @@
                                             data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">ADVANCE</a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a href="#">CLASS</a></li>
-                                            <li><a href="#">OBJECT</a></li>
-                                            <li><a href="#">THIS KEYWORD</a></li>
+                                            <li><a href="<?php echo _phpAdvance;?>class.php">CLASS</a></li>
+                                            <li><a href="<?php echo _phpAdvance;?>object.php">OBJECT</a></li>
+                                            <li><a href="<?php echo _phpAdvance;?>session.php">SESSIONS</a></li>
                                             <li class="dropdown">
                                                 <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                                     data-toggle="dropdown" aria-haspopup="true"

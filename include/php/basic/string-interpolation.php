@@ -1,5 +1,7 @@
 <?php include '../../../include/header.php'; ?>
 <?php echo "<div class='container pt-5'>";
+define("Ref","https://www.php.net/manual/en/language.types.string.php");
+define("Vid","sd");
 
 
 
@@ -11,5 +13,14 @@ echo "Value: \$a = $a";
 
 
 
-echo "</div>"; ?>
+
+
+?><br><br>
+<a class="" href="<?php echo Ref; ?>">[ Refernce ]</a>
+<a class="" href="<?php echo Vid; ?>">[ Video ]</a>
+<?php
+
+
+
+echo '</div>'; ?>
 <?php include '../../../include/footer.php'; ?>

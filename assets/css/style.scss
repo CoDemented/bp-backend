@@ -17,14 +17,13 @@ $colorSecondary: #ebbf2a;
 .top-line {
     width: 100%;
     border-bottom: $colorPrimary 3px solid;
-    // box-shadow: 0 0px 4px 0px #000;
     position: relative;
     text-align: center;
 
     span {
         width: 100%;
         background: $colorPrimary;
-        height: 207px;
+        height: 160px;
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0);
@@ -45,20 +44,24 @@ $colorSecondary: #ebbf2a;
     position: relative;
     text-shadow: -15px 5px 20px #ced0d3;
     color: white;
-
-    letter-spacing: -0.05em;
     font-family: 'Anton', Arial, sans-serif;
     user-select: none;
     font-size: 85px;
     transition: all 0.25s ease-out;
     text-align: center;
-    font-weight: 800;
-    /*padding-bottom: 8px;*/
+    font-weight: 600;
+    letter-spacing: -60px;
+    animation: lp 3s ease-in-out 0s forwards;
+    opacity: 0;
+    @keyframes lp {
+        70%{opacity: .3;}
+        100%{opacity: 1;letter-spacing: -0.1em;}
+    }
 }
 
 .shadows:hover {
     text-shadow: -16px 6px 15px #ced0d3;
-    color: lighten($colorSecondary, 40);
+    color: lighten($colorSecondary, 0);
 }
 
 
@@ -91,7 +94,7 @@ $colorSecondary: #ebbf2a;
 }
 
 #navbarSupportedContent>ul>li.active>a {
-    font-size: 31px;
+    font-size: 23px;
     padding: 0 10px;
 }
 
@@ -99,7 +102,6 @@ $colorSecondary: #ebbf2a;
     background: $colorPrimary;
     border-bottom: 2px solid $colorSecondary;
     animation: menuBg 1s ease-in 5s forwards;
-
     @keyframes menuBg {
         100% {
             background: transparent;
@@ -140,11 +142,11 @@ li.dropdown:hover .dropdown-menu {
 
 
 #navbarSupportedContent>ul>li {
-    animation: mRight 1s ease-in 5s forwards;
+    animation: mRight 500ms ease-in 5s forwards;
 
     @keyframes mRight {
         50% {
-            margin-right: 10px;
+            margin-right: 6px;
         }
 
         100% {
@@ -162,7 +164,7 @@ li.dropdown:hover .dropdown-menu {
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
-    padding: 12px 20px;
+    padding: 6px 20px;
     font-family: 'Roboto', sans-serif;
     display: block !important;
     text-shadow: 0 0 1px #000;
