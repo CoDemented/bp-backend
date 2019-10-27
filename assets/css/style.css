@@ -91,7 +91,7 @@
   border-radius: 0;
   -webkit-box-shadow: none !important;
   letter-spacing: .5px;
-  transform: translate(0px, 30px);
+  transform: translate(0px, 30px) scale(0.9);
   opacity: 0; }
 
 li.dropdown:hover .dropdown-menu {
@@ -101,7 +101,7 @@ li.dropdown:hover .dropdown-menu {
     opacity: .2; }
   100% {
     opacity: 1;
-    transform: translate(0px, 0px);
+    transform: translate(0px, 0px) scale(1);
     transition: opacity 1s ease-out !important; } }
 #navbarSupportedContent > ul > li {
   animation: mRight 500ms ease-in 5s forwards; }
@@ -160,7 +160,8 @@ li.dropdown:hover .dropdown-menu {
 
 @media only screen and (min-width: 767px) {
   .mainmenu .collapse ul li:hover > ul {
-    display: block; }
+    display: block;
+    background: transparent; }
 
   .mainmenu .collapse ul ul {
     position: absolute;
