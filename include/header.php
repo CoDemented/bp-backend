@@ -9,7 +9,8 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
- <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,13 +21,16 @@
     <title>BP-Project</title>
 </head>
 
-<body><div class="loading"><img src="<?php echo _css;?>imgs/loader.gif" alt=""></div>
+<body>
+    <div class="loading"><img src="<?php echo _css;?>imgs/loader.gif" alt=""></div>
 
-   <div class="top-line"><span></span></div>
+    <div class="top-line"><span></span></div>
     <div class="container">
-        <div class="shadows">
-            <span>C</span><span>o</span><span>D</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>e</span><span>d</span>
-        </div>
+        <a href="<?php echo _siteUrl;?>index.php">
+            <div class="shadows">
+                <span>C</span><span>o</span><span>D</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>e</span><span>d</span>
+            </div>
+        </a>
     </div>
 
     <!-- ----------------------------------Top Navigations -->
@@ -53,7 +57,8 @@
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BASIC</a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a href="<?php echo _phpBasic;?>constant.php">Constant</a></li>
-                                            <li><a href="<?php echo _phpBasic;?>string-interpolation.php">String Interpolation</a></li>
+                                            <li><a href="<?php echo _phpBasic;?>string-interpolation.php">String
+                                                    Interpolation</a></li>
                                             <li><a href="<?php echo _phpBasic;?>heredoc.php">Heredoc</a></li>
                                         </ul>
                                     </li>
