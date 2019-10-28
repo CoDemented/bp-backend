@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class="loading"><img src="<?php echo _css;?>imgs/loader.gif" alt=""></div>
+    <!-- <div class="loading"><img src="<?php echo _css;?>imgs/loader.gif" alt=""></div>
 
     <div class="top-line"><span></span></div>
     <div class="container">
@@ -31,7 +31,7 @@
                 <span>C</span><span>o</span><span>D</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>e</span><span>d</span>
             </div>
         </a>
-    </div>
+    </div> -->
 
     <!-- ----------------------------------Top Navigations -->
     <div id="menu_area" class="menu-area">
@@ -73,9 +73,9 @@
                                             <li class="dropdown">
                                                 <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                                     data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Dropdown3</a>
+                                                    aria-expanded="false">MYSQLI</a>
                                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="<?php echo _phpAdvance;?>mysqli/upload-display-image.php">Upload & Display image</a></li>
                                                     <li><a href="#">Another action</a></li>
                                                     <li><a href="#">Something else here</a></li>
                                                 </ul>

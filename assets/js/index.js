@@ -23,11 +23,11 @@ $(document).ready(function(){
 // ------------------------------------------------ Menu
 
 
-$("ul.navbar-nav li").click(function(){
-  $("ul.navbar-nav li").removeClass("active");
-  $(this).addClass("active");
-  // alert();
-})
+// $("ul.navbar-nav li").click(function(){
+//   $("ul.navbar-nav li").removeClass("active");
+//   $(this).addClass("active");
+//   // alert();
+// })
 
 // --------- Preloader
 window.addEventListener('load', function () {
