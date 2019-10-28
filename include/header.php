@@ -9,7 +9,8 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
- <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,14 +21,17 @@
     <title>BP-Project</title>
 </head>
 
-<body><div class="loading"><img src="<?php echo _css;?>imgs/loader.gif" alt=""></div>
+<body>
+    <!-- <div class="loading"><img src="<?php echo _css;?>imgs/loader.gif" alt=""></div>
 
-   <div class="top-line"><span></span></div>
+    <div class="top-line"><span></span></div>
     <div class="container">
-        <div class="shadows">
-            <span>C</span><span>o</span><span>D</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>e</span><span>d</span>
-        </div>
-    </div>
+        <a href="<?php echo _siteUrl;?>index.php">
+            <div class="shadows">
+                <span>C</span><span>o</span><span>D</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>e</span><span>d</span>
+            </div>
+        </a>
+    </div> -->
 
     <!-- ----------------------------------Top Navigations -->
     <div id="menu_area" class="menu-area">
@@ -53,7 +57,8 @@
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BASIC</a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a href="<?php echo _phpBasic;?>constant.php">Constant</a></li>
-                                            <li><a href="<?php echo _phpBasic;?>string-interpolation.php">String Interpolation</a></li>
+                                            <li><a href="<?php echo _phpBasic;?>string-interpolation.php">String
+                                                    Interpolation</a></li>
                                             <li><a href="<?php echo _phpBasic;?>heredoc.php">Heredoc</a></li>
                                         </ul>
                                     </li>
@@ -68,9 +73,9 @@
                                             <li class="dropdown">
                                                 <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                                     data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">Dropdown3</a>
+                                                    aria-expanded="false">MYSQLI</a>
                                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                    <li><a href="#">Action</a></li>
+                                                    <li><a href="<?php echo _phpAdvance;?>mysqli/upload-display-image.php">Upload & Display image</a></li>
                                                     <li><a href="#">Another action</a></li>
                                                     <li><a href="#">Something else here</a></li>
                                                 </ul>
@@ -86,4 +91,13 @@
             </div>
         </div>
     </div>
+    <script>
+    $("ul.navbar-nav li").click(function(){
+        // $("ul.navbar-nav li").removeClass("active");
+        // $(this).addClass("active");
+        alert();
+    })
+    
+    
+    </script>
     <!-- ----------------------------------Top Navigations -->
