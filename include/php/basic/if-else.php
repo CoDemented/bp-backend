@@ -1,7 +1,7 @@
 <?php include '../../../include/header.php'; ?>
 <?php
 echo "<div class='container pt-5'>";
-define("Ref", "https://www.youtube.com/watch?v=T6ULdzlYWXk&list=PLbGui_ZYuhigFdLdbSI2EM2MrJB7I0j-B&index=28");
+define("Ref", "#");
 define("Vid", "https://www.youtube.com/watch?v=T6ULdzlYWXk&list=PLbGui_ZYuhigFdLdbSI2EM2MrJB7I0j-B&index=28");
 
 
@@ -16,14 +16,12 @@ endif;
 
 
 
+
+
 ?><br><br>
 <a class="" href="<?php echo Ref; ?>">[ Reference ]</a>
 <a class="" href="<?php echo Vid; ?>">[ Video ]</a>
-
-
-
-<!--<a class="" href="file:///C:/xampp/htdocs/me/bp-backend/index.php">[ Code ]</a>-->
-
+<?php echo '<br>File Path:<br>'.__FILE__;?>
 
 <?php echo '</div>'; ?>
 <?php include '../../../include/footer.php'; ?>

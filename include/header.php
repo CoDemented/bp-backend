@@ -60,7 +60,18 @@
                                             <li><a href="<?php echo _phpBasic;?>string-interpolation.php">String
                                                     Interpolation</a></li>
                                             <li><a href="<?php echo _phpBasic;?>heredoc.php">Heredoc</a></li>
-                                            <li><a href="<?php echo _phpBasic;?>if-else.php">IF ELSE</a></li>
+                                            <li><a href="<?php echo _phpBasic;?>if-else.php">If Else</a></li>
+                                            
+                                            <li class="dropdown">
+                                                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">Supergolobals</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a href="<?php echo _phpBasic;?>supergolobals/GET.php">GET</a></li>
+                                                    <li><a href="<?php echo _phpBasic;?>supergolobals/POST.php">POST</a></li>
+                                                    <li><a href="<?php echo _phpBasic;?>supergolobals/REQUEST.php">REQUEST</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="dropdown">

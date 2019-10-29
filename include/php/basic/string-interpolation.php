@@ -13,8 +13,6 @@ echo "Value: \$a = $a";
 
 
 
-
-
 ?><br><br>
 <a class="" href="<?php echo Ref; ?>">[ Refernce ]</a>
 <a class="" href="<?php echo Vid; ?>">[ Video ]</a>

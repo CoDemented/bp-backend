@@ -1,4 +1,4 @@
-<?php include '../../../include/header.php'; ?>
+<?php include '../../../../include/header.php'; ?>
 <?php echo "<div class='container pt-5'>";
 define("Ref","https://www.php.net/manual/en/language.types.string.php");
 define("Vid","");
@@ -22,4 +22,4 @@ echo _siteUrl;
 
 
 echo '</div>'; ?>
-<?php include '../../../include/footer.php'; ?>
+<?php include '../../../../include/footer.php'; ?>
