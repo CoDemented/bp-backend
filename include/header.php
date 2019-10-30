@@ -67,9 +67,10 @@
                                                     data-toggle="dropdown" aria-haspopup="true"
                                                     aria-expanded="false">Supergolobals</a>
                                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                    <li><a href="<?php echo _phpBasic;?>supergolobals/GET.php">GET</a></li>
-                                                    <li><a href="<?php echo _phpBasic;?>supergolobals/POST.php">POST</a></li>
-                                                    <li><a href="<?php echo _phpBasic;?>supergolobals/REQUEST.php">REQUEST</a></li>
+                                                    <li><a href="<?php echo _phpBasic;?>supergolobals/$_GET.php">$_GET</a></li>
+                                                    <li><a href="<?php echo _phpBasic;?>supergolobals/$_POST.php">$_POST</a></li>
+                                                    <li><a href="<?php echo _phpBasic;?>supergolobals/$_REQUEST.php">$_REQUEST</a></li>
+                                                    <li><a href="<?php echo _phpBasic;?>supergolobals/$_SERVER.php">$_SERVER</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
