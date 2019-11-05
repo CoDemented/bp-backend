@@ -2,19 +2,6 @@ $colorPrimary: #002e63;
 $colorSecondary: #ebbf2a;
 
 /* --------------------------------------------------------------------------------------------Menu */
-.loading {
-    width: 100vw;
-    height: 100vh;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 555;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .top-line {
     width: 100%;
     border-bottom: $colorPrimary 3px solid;
@@ -161,7 +148,7 @@ li.dropdown:hover .dropdown-menu {
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
-    padding: 6px 20px;
+    padding: 12px 20px;
     font-family: 'Roboto', sans-serif;
     display: block !important;
     text-shadow: 0 0 1px #000;

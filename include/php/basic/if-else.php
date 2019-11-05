@@ -1,10 +1,17 @@
-<?php include '../../../include/header.php'; ?>
 <?php
+include '../../../include/header.php';
+
+function filePath() {
+    highlight_file(__FILE__);
+}
+
+define("Ref", "");
+define("Vid", "");
 echo "<div class='container pt-5'>";
-define("Ref", "#");
-define("Vid", "https://www.youtube.com/watch?v=T6ULdzlYWXk&list=PLbGui_ZYuhigFdLdbSI2EM2MrJB7I0j-B&index=28");
+?>
+<!--================================================= Code-->
 
-
+<?php
 $s = 10;
 
 if ($s == 10 && $s < 11):
@@ -12,16 +19,13 @@ if ($s == 10 && $s < 11):
 else:
     echo "Condition False";
 endif;
+?>
 
 
-
-
-
-
-?><br><br>
-<a class="" href="<?php echo Ref; ?>">[ Reference ]</a>
-<a class="" href="<?php echo Vid; ?>">[ Video ]</a>
-<?php echo '<br>File Path:<br>'.__FILE__;?>
-
+<!--================================================= Code-->
+<br><br>
+<a  href="<?php echo Ref; ?>">[ Reference ]</a>
+<a href="<?php echo Vid; ?>">[ Video ]</a>
+<a href="#" data-toggle="modal" data-target="#modalCode">[ Code ]</a>
 <?php echo '</div>'; ?>
 <?php include '../../../include/footer.php'; ?>

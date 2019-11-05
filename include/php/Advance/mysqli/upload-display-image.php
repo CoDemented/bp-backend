@@ -1,8 +1,15 @@
-<?php include '../../../../include/header.php'; ?>
-<?php echo "<div class='container pt-5'>";
-define("Ref","#");
-define("Vid","https://www.youtube.com/watch?v=JaRq73y5MJk");
+<?php
+include '../../../../include/header.php';
+
+function filePath() {
+    highlight_file(__FILE__);
+}
+
+define("Ref", "#");
+define("Vid", "https://www.youtube.com/watch?v=T6ULdzlYWXk&list=PLbGui_ZYuhigFdLdbSI2EM2MrJB7I0j-B&index=28");
+echo "<div class='container pt-5'>";
 ?>
+<!--================================================= Code-->
 
 
 
@@ -18,10 +25,10 @@ define("Vid","https://www.youtube.com/watch?v=JaRq73y5MJk");
 
 
 
+<!--================================================= Code-->
 <br><br>
-<a class="" href="<?php echo Ref; ?>">Refernce</a>
-<a class="" href="<?php echo Vid; ?>"> Video</a>
-<?php
-    
-    echo '</div>'; ?>
+<a  href="<?php echo Ref; ?>">[ Reference ]</a>
+<a href="<?php echo Vid; ?>">[ Video ]</a>
+<a href="#" data-toggle="modal" data-target="#modalCode">[ Code ]</a>
+<?php echo '</div>'; ?>
 <?php include '../../../../include/footer.php'; ?>

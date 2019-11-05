@@ -2,7 +2,11 @@ $(document).ready(function(){
     if (jQuery) {  
       console.log("jquery-341: Ok!");
     }
-
+// --------- Preloader
+window.addEventListener('load', function () {
+      $(".loading").fadeOut();
+})
+// --------- Preloader
 
 // ------------------------------------------------ Menu
     (function($){
@@ -29,12 +33,6 @@ $(document).ready(function(){
 //   // alert();
 // })
 
-// --------- Preloader
-window.addEventListener('load', function () {
-  $(document).ready(function () {
-      $(".loading").fadeOut();
-  });
-})
-// --------- Preloader
+
 
  
