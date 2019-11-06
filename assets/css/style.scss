@@ -2,19 +2,6 @@ $colorPrimary: #002e63;
 $colorSecondary: #ebbf2a;
 
 /* --------------------------------------------------------------------------------------------Menu */
-.loading {
-    width: 100vw;
-    height: 100vh;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 555;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .top-line {
     width: 100%;
     border-bottom: $colorPrimary 3px solid;
@@ -71,23 +58,19 @@ $colorSecondary: #ebbf2a;
     .dropdown:hover .dropdown-toggle::after {
         animation: move 4s ease-in-out 1;
     }
-
     @keyframes move {
         15% {
             transform: rotate(-92deg);
             color: $colorSecondary
         }
-
         30% {
             transform: rotate(0deg);
             color: #fff;
         }
-
         45% {
             transform: rotate(92deg);
             color: $colorSecondary
         }
-
         60% {
             transform: rotate(0deg);
             color: #fff;
@@ -103,7 +86,7 @@ $colorSecondary: #ebbf2a;
 .menu-area {
     background: $colorPrimary;
     border-bottom: 2px solid $colorSecondary;
-    animation: menuBg 1s ease-in 5s forwards;
+    animation: menuBg 500ms ease-in 5s forwards;
     @keyframes menuBg {
         100% {
             background: transparent;
@@ -142,9 +125,8 @@ li.dropdown:hover .dropdown-menu {
     }
 }
 
-
 #navbarSupportedContent>ul>li {
-    animation: mRight 500ms ease-in 5s forwards;
+    animation: mRight 300ms ease-in 5s forwards;
 
     @keyframes mRight {
         50% {
@@ -166,14 +148,12 @@ li.dropdown:hover .dropdown-menu {
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
-    padding: 6px 20px;
+    padding: 12px 20px;
     font-family: 'Roboto', sans-serif;
     display: block !important;
     text-shadow: 0 0 1px #000;
     background: $colorPrimary;
-
 }
-
 
 .mainmenu .active a,
 .mainmenu .active a:focus,
