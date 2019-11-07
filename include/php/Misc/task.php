@@ -11,14 +11,23 @@ echo "<div class='container pt-5'>";
 ?>
 <!--================================================= Code-->
 
+<form method="POST">
+    <input type="text" name="iValue">
+    <input type="submit" name="submit">
+</form>
 <?php
-echo "<h4>Ex:</h4>";
-
-echo "<code>define('_siteUrl', 'http://localhost/me/bp-backend/');</code><br>";
-echo "<code>echo _siteUrl;</code>";
-
-echo "<br><br><h5>Result</h5>";
-echo _siteUrl;
+if (isset($_POST['iValue'])) {
+    $iVal = $_POST['iValue'];
+    
+    $i=0;
+        while (!empty($iVal[$i])) {
+        $i++;
+    }
+    
+    for ($i-=1; $i >= 0; $i--) {
+        echo $iVal[$i];
+    }
+}
 ?>
 
 <!--================================================= Code-->

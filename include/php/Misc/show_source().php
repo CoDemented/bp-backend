@@ -12,14 +12,14 @@ echo "<div class='container pt-5'>";
 <!--================================================= Code-->
 
 <?php
-echo "<h4>Ex:</h4>";
 
-echo "<code>define('_siteUrl', 'http://localhost/me/bp-backend/');</code><br>";
-echo "<code>echo _siteUrl;</code>";
+highlight_file(__FILE__);
+// OR
+//show_source(test.php);
 
-echo "<br><br><h5>Result</h5>";
-echo _siteUrl;
 ?>
+
+
 
 <!--================================================= Code-->
 <br><br>

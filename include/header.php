@@ -4,8 +4,10 @@ define("_css", _siteUrl . "assets/css/");
 define("_js", _siteUrl . "assets/js/");
 define("_plugins", _siteUrl . "assets/plugins/");
 
-define("_phpBasic", _siteUrl . "include/php/basic/");
-define("_phpAdvance", _siteUrl . "include/php/advance/");
+define("_php", _siteUrl . "include/php/");
+define("_phpMisc", _siteUrl . "include/php/Misc/");
+define("_phpBasic", _siteUrl . "include/php/Basic/");
+define("_phpAdvance", _siteUrl . "include/php/Advance/");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,6 +78,14 @@ define("_phpAdvance", _siteUrl . "include/php/advance/");
                                     <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PHP</a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li class="dropdown">
+                                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MISC</a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a href="<?php echo _phpMisc; ?>show_source().php">show_source()</a></li>
+                                                <li><a href="<?php echo _phpMisc; ?>task.php">Task Uzair</a></li>
+                                            </ul>
+                                        </li>
                                         <li class="dropdown">
                                             <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BASIC</a>
@@ -136,7 +146,7 @@ define("_phpAdvance", _siteUrl . "include/php/advance/");
             <div class="modal-dialog" role="document" style="max-width: 85%">
                 <div class="modal-content px-3">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Source Code</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
