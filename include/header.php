@@ -121,6 +121,14 @@ define("_phpAdvance", _siteUrl . "include/php/Advance/");
                                                 <li class="dropdown">
                                                     <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                       aria-expanded="false">PDO</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                        <li><a href="<?php echo _phpAdvance; ?>pdo/index.php">PDO</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                                       data-toggle="dropdown" aria-haspopup="true"
                                                        aria-expanded="false">MYSQLI</a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                         <li><a href="<?php echo _phpAdvance; ?>mysqli/upload-display-image.php">Upload & Display image</a></li>
