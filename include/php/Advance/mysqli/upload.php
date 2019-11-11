@@ -1,8 +1,6 @@
 <?php
 if (isset($_POST['submit'])) {
     $file = $_FILES['file'];
-    // echo "<pre>";
-    // print_r($file);
     $fileName = $_FILES['file']['name'];
     $fileTempName = $_FILES['file']['tmp_name'];
     $fileSize = $_FILES['file']['size'];

@@ -123,7 +123,7 @@ define("_phpAdvance", _siteUrl . "include/php/Advance/");
                                                        data-toggle="dropdown" aria-haspopup="true"
                                                        aria-expanded="false">PDO</a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li><a href="<?php echo _phpAdvance; ?>pdo/index.php">PDO</a></li>
+                                                        <li><a href="<?php echo _phpAdvance; ?>pdo/index.php">Pho Data Object</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="dropdown">

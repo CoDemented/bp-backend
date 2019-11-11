@@ -11,15 +11,8 @@ echo "<div class='container pt-5'>";
 ?>
 <!--================================================= Code-->
 
-<h1 class="display-4">PDO Home</h1>
 
-<div class="box-container">
-    <a href="">
-        <div class="box">
-            <h4>Connection</h4>
-        </div>
-    </a>
-</div>
+
 
 
 
