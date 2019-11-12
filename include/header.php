@@ -62,7 +62,7 @@ define("_phpAdvance", _siteUrl . "include/php/Advance/");
         <div id="menu_area" class="menu-area">
             <div class="container">
                 <div class="row">
-                    <nav class="navbar navbar-light navbar-expand-lg mainmenu">
+                    <nav class="navbar navbar-light navbar-expand-lg mainmenu pt-0 pb-0">
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">

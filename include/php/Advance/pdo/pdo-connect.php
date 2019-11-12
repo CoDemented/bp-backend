@@ -12,43 +12,8 @@ echo "<div class='container pt-5'>";
 <!--================================================= Code-->
 
 <h1 class="display-4"  id="secTitle">
-    <a href="<?php echo _pdo; ?>index.php"><?php echo basename(__DIR__);  ?></a>
+    <a href="<?php echo _pdo; ?>index.php"><?php echo basename(__FILE__); ?></a>
 </h1>
-
-<div class="box-container pt-5">
-    <a href="pdo-connect.php">
-        <div class="box">
-            <h6>1. Connection</h6>
-        </div>
-    </a>
-    <a href="">
-        <div class="box">
-            <h6>Connection</h6>
-        </div>
-    </a>
-    <a href="">
-        <div class="box">
-            <h6>Connection</h6>
-        </div>
-    </a>
-    <a href="">
-        <div class="box">
-            <h6>Connection</h6>
-        </div>
-    </a>
-    <a href="">
-        <div class="box">
-            <h6>Connection</h6>
-        </div>
-    </a>
-    <a href="">
-        <div class="box">
-            <h6>Connection</h6>
-        </div>
-    </a>
- 
- 
-</div>
 
 
 
