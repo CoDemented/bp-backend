@@ -11,9 +11,19 @@ echo "<div class='container pt-5'>";
 ?>
 <!--================================================= Code-->
 
-<h1 class="display-4"  id="secTitle">
-    <a href="<?php echo _pdo; ?>index.php"><?php echo basename(__FILE__); ?></a>
-</h1>
+<?php
+
+    $DSN = "mysqli:host=localhost; dbname=pdo";
+    $DB_USER = "root";
+    $DB_PASSWORD = "";
+
+    try {
+        $connect = new PDO($DSN, $DB_USER, $DB_PASSWORD);
+    } catch (PDOException $e) {
+        echo "Connection Failed";
+    }
+
+?>
 
 
 

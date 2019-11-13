@@ -131,6 +131,7 @@ define("_phpAdvance", _siteUrl . "include/php/Advance/");
                                                        data-toggle="dropdown" aria-haspopup="true"
                                                        aria-expanded="false">MYSQLI</a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a href="<?php echo _phpAdvance; ?>mysqli/index.php">MYSQLI Home</a></li>
                                                         <li><a href="<?php echo _phpAdvance; ?>mysqli/connection.php">Connection</a></li>
                                                         <li><a href="<?php echo _phpAdvance; ?>mysqli/upload-display-image.php">Upload & Display image</a></li>
                                                     </ul>
