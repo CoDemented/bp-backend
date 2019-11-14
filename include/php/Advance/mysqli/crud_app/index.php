@@ -13,17 +13,33 @@ define("Vid", "https://www.youtube.com/watch?v=ZJt9IWgsabU&list=PLbGui_ZYuhiiaWM
 <?php
 
 include "connection.php";
-
-$query = "SELECT * FROM users";
-$queryResult = mysqli_query($link, $query);
-
 //    while($row = mysqli_fetch_assoc($queryResult)){
 //
 //        echo $row['id'].$row['first_name'].$row['last_name'].$row['email'];
 //
 //    }
 ?>
+<?php
+if(isset($_POST['submit'])){
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+    $Email = $_POST['email'];
 
+    $query_insert = "INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`) VALUES (NULL, '".$firstName."', '".$lastName."', '".$Email."')";
+
+    if(mysqli_query($link, $query_insert)){
+        echo "Inserted";
+//        header("Location: index.php");
+
+    } else {
+        echo "Not Inserted: ".mysqli_error($link);
+    }
+}
+
+$query = "SELECT * FROM users";
+$queryResult = mysqli_query($link, $query);
+
+?>
 
 <table class="table table-bordered">
     <thead>
@@ -36,10 +52,12 @@ $queryResult = mysqli_query($link, $query);
     </tr>
     </thead>
     <tbody>
-    <?php while ($row = mysqli_fetch_assoc($queryResult)) { ?>
+    <?php
+    $counter = 1;
+    while ($row = mysqli_fetch_assoc($queryResult)) { ?>
         <tr>
             <td>
-                <?php echo $row['id'] ?>
+                <?php echo $counter; ?>
             </td>
             <td>
                 <?php echo $row['first_name'] ?>
@@ -56,55 +74,53 @@ $queryResult = mysqli_query($link, $query);
                 Delete
             </td>
         </tr>
-    <?php } ?>
+    <?php
+        $counter++;
+    } ?>
     <tr>
+        <form method="POST">
         <td>
-            +
+            <i class="fal fa-spinner-third fa-spin"></i>
         </td>
         <td>
+            <input placeholder="First Name" type="text" name="firstName" class="inputs">
+        </td>
+        <td>
+            <input placeholder="Last Name" type="text" name="lastName" class="inputs">
 
         </td>
         <td>
+            <input placeholder="Email Address" type="email" name="email" class="inputs">
 
         </td>
         <td>
-
+            <input type="button" value="Add"  class="inputs-b">
+            <input type="submit" name="submit" class="inputs">
         </td>
-        <td>
-            add
-        </td>
+        </form>
     </tr>
     </tbody>
 </table>
-
-<?php
-    function insertRow($link)
-    {
-        $firstName = "Salman";
-        $lastName = "Khan";
-        $Email = "mallu@sallu.com";
-
-        $query_insert = "INSERT INTO users ('first_name', 'last_name', 'email') VALUES ($firstName, $lastName, $Email)";
-
-        if(mysqli_query($link, $query_insert)){
-            echo "Inserted";
-        } else {
-            echo "Not Inserted";
-        }
-
+<style>
+    .inputs {
+        display: none;
     }
-    function test(){
-        echo "php function called";
+    input.inputs {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-left: 8px;
     }
+</style>
 
-?>
-<script>
-    function callPhp() {
-        var result = "<?php test(); ?>";
-        alert(result);
-        return false;
-    }
-</script>
-<button onclick="callPhp()">class php</button>
+
+
+
+
+
+
+
+
+
 <!--================================================= Code-->
 <?php include '../../../../../include/footer.php'; ?>

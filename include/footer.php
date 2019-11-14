@@ -17,6 +17,12 @@
     <script>
         AOS.init();
     </script>
+<script>
+    $("input.inputs-b").click(function () {
+        $(this).hide();
+        $(".inputs").fadeIn(500);
+    });
+</script>
     <!-- -------------------------------------------AOS -->
 </body>
 </html>
