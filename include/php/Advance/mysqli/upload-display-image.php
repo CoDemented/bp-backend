@@ -7,7 +7,6 @@ function filePath() {
 
 define("Ref", "#");
 define("Vid", "https://www.youtube.com/watch?v=T6ULdzlYWXk&list=PLbGui_ZYuhigFdLdbSI2EM2MrJB7I0j-B&index=28");
-echo "<div class='container pt-5'>";
 ?>
 <!--================================================= Code-->
 
@@ -26,9 +25,4 @@ echo "<div class='container pt-5'>";
 
 
 <!--================================================= Code-->
-<br><br>
-<a  href="<?php echo Ref; ?>">[ Reference ]</a>
-<a href="<?php echo Vid; ?>">[ Video ]</a>
-<a href="#" data-toggle="modal" data-target="#modalCode">[ Code ]</a>
-<?php echo '</div>'; ?>
 <?php include '../../../../include/footer.php'; ?>
