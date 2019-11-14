@@ -18,9 +18,22 @@
         AOS.init();
     </script>
 <script>
-    $("input.inputs-b").click(function () {
+$("i.fal.fa-spinner-third").hide();
+    $("button.main-btn").click(function () {
         $(this).hide();
-        $(".inputs").fadeIn(500);
+        $("button.btnSubmit").fadeIn(1000);
+        $("input.input-fields").fadeIn(1000);
+        $("i.fal.fa-spinner-third").fadeIn(5000);
+        $("i.fal.fa-spinner-third").addClass("fa-spin");
+    });
+
+</script>
+<script>
+    $("#alert_delete").fadeTo(2000, 500).slideUp(500, function(){
+        $("#success-alert").slideUp(500);
+    });
+    $("#alert_insert").fadeTo(2000, 500).slideUp(500, function(){
+        $("#success-alert").slideUp(500);
     });
 </script>
     <!-- -------------------------------------------AOS -->
