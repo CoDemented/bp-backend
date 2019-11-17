@@ -97,7 +97,10 @@ $queryResult = mysqli_query($link, $query);
                 <?php echo $row['email'] ?>
             </td>
             <td>
-                <button class="oper-btn btn btn-outline-info  btn-block m-0"><i class="fal fa-edit"></i> Edit</button>
+                <form method="POST" class="d-inline">
+                    <input type="hidden" name="row_id" value='<?php echo $row['id']; ?>'>
+                    <button type="submit" name="edit" class="oper-btn btn btn-outline-info  btn-block m-0"><i class="fal fa-edit"></i> Edit</button>
+                </form>
                 <form method="POST" class="d-inline">
                     <input type="hidden" name="row_id" value='<?php echo $row['id']; ?>'>
                     <button type="submit" name="delete" class="oper-btn btn btn-outline-danger btn-block m-0"><i
@@ -110,6 +113,13 @@ $queryResult = mysqli_query($link, $query);
         </tr>
         <?php
         $counter++;
+
+        if(isset($_POST['edit'])){
+           echo $row['id'];
+        }
+
+
+
     } ?>
     <tr>
         <form method="POST">
