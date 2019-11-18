@@ -5,9 +5,9 @@ define("_js", _siteUrl . "assets/js/");
 define("_plugins", _siteUrl . "assets/plugins/");
 
 define("_php", _siteUrl . "include/php/");
-define("_phpMisc", _siteUrl . "include/php/Misc/");
-define("_phpBasic", _siteUrl . "include/php/Basic/");
-define("_phpAdvance", _siteUrl . "include/php/Advance/");
+define("_phpMisc", _siteUrl . "include/php/misc/");
+define("_phpBasic", _siteUrl . "include/php/basic/");
+define("_phpAdvance", _siteUrl . "include/php/advance/");
 ?>
 <!DOCTYPE html>
 <html lang="en">
