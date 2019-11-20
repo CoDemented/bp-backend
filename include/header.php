@@ -25,9 +25,9 @@ define("_phpAdvance", _siteUrl . "include/php/Advance/");
 
 <body>
 <!---------------------------------------------------- Pre-Loader -->
-<div class="loading">
-    <img src="<?php echo _css; ?>imgs/loader.gif" alt="">
-</div>
+<!--<div class="loading">-->
+<!--    <img src="--><?php //echo _css; ?><!--imgs/loader.gif" alt="">-->
+<!--</div>-->
 <style>
     .loading {
         width: 100vw;
