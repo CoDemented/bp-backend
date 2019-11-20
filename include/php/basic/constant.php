@@ -2,7 +2,7 @@
 include '../../../include/header.php';
 
 function filePath() {
-    show_source(__FILE__);
+    highlight_file(__FILE__);
 }
 
 define("Ref", "");

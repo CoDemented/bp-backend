@@ -22,7 +22,9 @@ $("i.fal.fa-spinner-third").hide();
     $("button.main-btn").click(function () {
         $(this).hide();
         $("button.btnSubmit").fadeIn(1000);
-        $("input.input-fields").fadeIn(1000);
+        // $("input.input-fields").fadeIn(1000);
+        $("input.input-fields").removeClass("d-none");
+
         $("i.fal.fa-spinner-third").fadeIn(5000);
         $("i.fal.fa-spinner-third").addClass("fa-spin");
     });

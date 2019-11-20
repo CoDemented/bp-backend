@@ -1,6 +1,7 @@
 <?php
 include '../../../../../include/header.php';
 
+
 function filePath()
 {
     highlight_file(__FILE__);
@@ -19,6 +20,7 @@ if (isset($_POST['submit'])) {
     $lastName = $_POST['lastName'];
     $Email = $_POST['email'];
 
+//    =================================================== INSERT
     $query_insert = "INSERT INTO `users` (`id`, `first_name`, `last_name`, `email`) VALUES (NULL, '" . $firstName . "', '" . $lastName . "', '" . $Email . "')";
 
     if (mysqli_query($link, $query_insert)) {
@@ -37,8 +39,15 @@ if (isset($_POST['submit'])) {
         echo "Not Inserted: " . mysqli_error($link);
     }
 }
+//    =================================================== INSERT
 
 
+
+
+
+
+
+//    =================================================== DELETE
 if (isset($_POST['delete'])) {
     $query_delete = "DELETE FROM users WHERE id={$_POST['row_id']}";
 
@@ -47,14 +56,11 @@ if (isset($_POST['delete'])) {
         ?>
 
         <div class="alert alert-danger alert-dismissible fade show" role="alert" id="alert_delete">
-            <strong>Done!</strong> Row has been inserted..
+            <strong>Done!</strong> Row has been Deleted..
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-        <script>
-
-        </script>
         <?php
 
     }
@@ -62,8 +68,12 @@ if (isset($_POST['delete'])) {
         echo "not deleted";
     }
 }
+//    =================================================== DELETE
 
 
+
+
+//    =================================================== VIEW
 $query = "SELECT * FROM users";
 $queryResult = mysqli_query($link, $query);
 ?>
@@ -117,15 +127,13 @@ $queryResult = mysqli_query($link, $query);
                 <i class="fal fa-spinner-third"></i>
             </td>
             <td>
-                <input size="10" placeholder="First Name" type="text" name="firstName" class="input-fields">
+                <input size="10" placeholder="First Name" type="text" name="firstName" class="input-fields d-none">
             </td>
             <td>
-                <input size="10" placeholder="Last Name" type="text" name="lastName" class="input-fields">
-
+                <input size="10" placeholder="Last Name" type="text" name="lastName" class="input-fields d-none">
             </td>
             <td>
-                <input size="30" placeholder="Email Address" type="email" name="email" class="input-fields">
-
+                <input size="30" placeholder="Email Address" type="email" name="email" class="input-fields d-none">
             </td>
             <td>
                 <button class="main-btn btn btn-outline-primary btn-block m-0" type="button"><i class="fal fa-file"></i>
@@ -142,7 +150,7 @@ $queryResult = mysqli_query($link, $query);
 
 <style>
     .input-fields {
-        display: none;
+        /*display: none;*/
     }
 
     input.input-fields {
@@ -172,6 +180,22 @@ $queryResult = mysqli_query($link, $query);
         width: 230px;
     }
 </style>
+
+
+
+<?php
+//    =================================================== UPDATE
+include 'update.php';
+$query_update = "UPDATE users SET first_name = 'wa', last_name='wawa', email='wawa@wawa' WHERE id=23";
+if (mysqli_query($link, $query_update)){
+    echo "wa jee wa";
+}
+
+
+
+//    =================================================== UPDATE
+?>
+
 
 
 <!--================================================= Code-->
