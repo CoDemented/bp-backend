@@ -1,8 +1,7 @@
 <?php
-include 'include/header.php';
+include '../../../include/header.php';
 
-function filePath()
-{
+function filePath() {
     highlight_file(__FILE__);
 }
 
@@ -10,7 +9,19 @@ define("Ref", "");
 define("Vid", "");
 ?>
 <!--================================================= Code-->
-<a href="https://www.php.net/manual/en/" target="_blank">Php Docs</a>
+<?php
+
+
+
+
+
+
+
+
+?>
 
 <!--================================================= Code-->
-<?php include 'include/footer.php'; ?>
+<?php include '../../../include/footer.php'; ?>
+
+
+

@@ -83,6 +83,7 @@ define("_phpAdvance", _siteUrl . "include/php/advance/");
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li class="dropdown">
                                 <li><a href="<?php echo _phpBasic; ?>constant.php">Constant</a></li>
+                                <li><a href="<?php echo _phpBasic; ?>variables.php">Variables</a></li>
                                 <li><a href="<?php echo _phpBasic; ?>string-interpolation.php">String
                                         Interpolation</a></li>
                                 <li><a href="<?php echo _phpBasic; ?>heredoc.php">Heredoc</a></li>
@@ -114,12 +115,8 @@ define("_phpAdvance", _siteUrl . "include/php/advance/");
                                aria-haspopup="true" aria-expanded="false">ADVANCE</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li class="dropdown">
-                                <li><a href="<?php echo _phpMisc; ?>show_source().php">show_source()</a>
+                                <li><a href="<?php echo _phpAdvance; ?>builtin-functions.php">Builtin-Functions</a>
                                 </li>
-                                <li><a href="<?php echo _phpMisc; ?>task.php">Task Uzair</a></li>
-
-                                </li>
-
                                 <li class="dropdown">
                                 <li><a href="<?php echo _phpAdvance; ?>Access-Modifiers.php">Access
                                         Modifiers</a></li>
