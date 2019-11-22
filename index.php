@@ -10,7 +10,8 @@ define("Ref", "");
 define("Vid", "");
 ?>
 <!--================================================= Code-->
-<a href="https://www.php.net/manual/en/" target="_blank">Php Docs</a>
+
+    <a href="https://www.learn-php.org/" target="_blank">Docs</a>
 
 <!--================================================= Code-->
 <?php include 'include/footer.php'; ?>
