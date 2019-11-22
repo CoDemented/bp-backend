@@ -15,46 +15,61 @@ define("Vid", "https://www.youtube.com/watch?v=ZJt9IWgsabU&list=PLbGui_ZYuhiiaWM
 ?>
 
 
-<!------------------------------------------------------ INSERT-->
+<!------------------------------------------------------ INSERT UPDATE-->
 <?php
 if (isset($_POST['Edit'])){
-//        $query = mysqli_query($link, "UPDATE users SET `name` = 'ali', `number`=3333, `email`='asdf@dsf' WHERE id=79");
     $query = mysqli_query($link, "SELECT * FROM users WHERE id={$_POST['rowID']}");
     $row = mysqli_fetch_assoc($query);
+    $_POST['action'] = 'y';
+
+
 
 }
+if (isset($_POST['submit'])) {
+
+    if ($_POST['action'] == 'y'){
+        $query = mysqli_query($link, "UPDATE users SET `name` = '".$_POST['Name']."', `number`='".$_POST['Number']."', `email`='".$_POST['Email']."' WHERE id={$_POST['getID']}");
+        $_POST['action'] = 'x';
+    }
+    else {
+        $query = mysqli_query($link, "INSERT INTO users (`id`, `name`, `number`, `email`) VALUE (NULL, '".$_POST['Name']."', '".$_POST['Number']."', '".$_POST['Email']."')");
+
+    }
+}
 ?>
+
 <form method="POST">
-    <input type="hidden" name="action" value="stop">
-    <input type="text" name="Name">
-    <input type="text" name="Number">
-    <input type="text" name="Email">
+    <input type="hidden" name="action" value="<?php if (isset($_POST['action'])){echo $_POST['action'];} ?>">
+    <input type="hidden" name="getID" value="<?php if (isset($row['id'])){echo $row['id'];} ?>">
+    <input type="text" name="Name" value="<?php if (isset($row['name'])){echo $row['name']; } ?>">
+    <input type="text" name="Number" value="<?php if (isset($row['number'])){echo $row['number']; } ?>">
+    <input type="text" name="Email" value="<?php if (isset($row['email'])){echo $row['email']; } ?>">
     <input type="Submit" name="submit" value="Go">
 </form>
+<!------------------------------------------------------ INSERT UPDATE-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------ DELETE-->
 <?php
-if (isset($_POST['submit'])) {
-    echo $_POST['action'];
-        $query = mysqli_query($link, "INSERT INTO users (`id`, `name`, `number`, `email`) VALUE (NULL, '".$_POST['Name']."', '".$_POST['Number']."', '".$_POST['Email']."')");
+if(isset($_POST['Delete'])){
+    $query = mysqli_query($link, "DELETE FROM users WHERE id={$_POST['rowID']}");
 }
 ?>
-<!------------------------------------------------------ INSERT-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!------------------------------------------------------ DELETE-->
 <!------------------------------------------------------ PRINT-->
 <div class="container p-0 flex">
     <?php
@@ -77,7 +92,6 @@ if (isset($_POST['submit'])) {
             <?php //echo $ID; ?>
             <div class="overlay">
                 <form method="POST">
-
                     <input type="hidden" name="rowID" value="<?php if (isset($ID)){echo $ID;}?>">
                     <button type="submit" name="Edit">Edit</button>
                     <button type="submit" name="Delete">Delete</button>
@@ -90,13 +104,7 @@ if (isset($_POST['submit'])) {
 </div>
 <!------------------------------------------------------ PRINT-->
 
-<!------------------------------------------------------ DELETE-->
-<?php
-if(isset($_POST['Delete'])){
-    $query = mysqli_query($link, "DELETE FROM users WHERE id=$ID");
-}
-?>
-<!------------------------------------------------------ DELETE-->
+
 
 <!--================================================= Code-->
 <?php include '../../../../../include/footer.php'; ?>
@@ -145,7 +153,7 @@ if(isset($_POST['Delete'])){
         background: #333333d1;
         margin: 10px;
         opacity: 0;
-        transition: .3s ease-out;
+        transition: .1s ease-out;
         overflow: hidden;
     }
     .user-box:hover .overlay {

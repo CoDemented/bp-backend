@@ -25,9 +25,9 @@ define("_phpAdvance", _siteUrl . "include/php/advance/");
 
 <body>
 <!---------------------------------------------------- Pre-Loader -->
-<!--<div class="loading">-->
-<!--    <img src="--><?php //echo _css; ?><!--imgs/loader.gif" alt="">-->
-<!--</div>-->
+<div class="loading">
+    <img src="<?php echo _css; ?>imgs/loader.gif" alt="">
+</div>
 <style>
     .loading {
         width: 100vw;
@@ -139,7 +139,7 @@ define("_phpAdvance", _siteUrl . "include/php/advance/");
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <li><a href="<?php echo _phpAdvance; ?>mysqli/index.php">MYSQLI
                                                 Home</a></li>
-                                        <li><a href="<?php echo _phpAdvance; ?>mysqli/crud_app/index.php">Crud App</a>
+                                        <li><a href="<?php echo _phpAdvance; ?>mysqli/crud_app2/index.php">Crud App</a>
                                         </li>
                                         <li><a href="<?php echo _phpAdvance; ?>mysqli/connection.php">Connection</a>
                                         </li>
