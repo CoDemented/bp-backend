@@ -8,6 +8,12 @@ define("_php", _siteUrl . "include/php/");
 define("_phpMisc", _siteUrl . "include/php/misc/");
 define("_phpBasic", _siteUrl . "include/php/basic/");
 define("_phpAdvance", _siteUrl . "include/php/advance/");
+define("BR", "<br>");
+function BR($count=1){
+    for ($i=0; $i<=$count; $i++){
+        echo "<br>";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
