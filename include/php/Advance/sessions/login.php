@@ -12,7 +12,6 @@ define("Ref", "");
 define("Vid", "");
 ?>
     <!--================================================= Code-->
-
 <?php
 
 if (!isset($_SESSION['user_name'])) {
@@ -38,8 +37,6 @@ else {
         <input type="pass" name="user_pass">
         <input type="submit" name="log_in" value="Sign-in"  class="btn btn-success">
     </form>
-
-
 
 
     <!--================================================= Code-->

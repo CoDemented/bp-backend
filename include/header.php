@@ -1,5 +1,5 @@
 <?php
-define("_siteUrl", "http://localhost/me/php_aio/");
+define("_siteUrl", "http://localhost/php_aio/");
 define("_css", _siteUrl . "assets/css/");
 define("_js", _siteUrl . "assets/js/");
 define("_plugins", _siteUrl . "assets/plugins/");
