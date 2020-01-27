@@ -36,6 +36,7 @@ function BR($count=1){
 </div>
 <style>
     .loading {
+        display: none !important;
         width: 100vw;
         height: 100vh;
         background: #fff;
@@ -128,7 +129,7 @@ function BR($count=1){
                                         Modifiers</a></li>
                                 <li><a href="<?php echo _phpAdvance; ?>class.php">CLASS</a></li>
                                 <li><a href="<?php echo _phpAdvance; ?>object.php">OBJECT</a></li>
-                                <li><a href="<?php echo _phpAdvance; ?>session.php">SESSIONS</a></li>
+                                <li><a href="<?php echo _phpAdvance; ?>sessions/index.php">SESSIONS</a></li>
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                        data-toggle="dropdown"

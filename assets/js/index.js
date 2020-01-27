@@ -3,9 +3,9 @@ $(document).ready(function(){
       console.log("jquery-341: Ok!");
     }
 // --------- Preloader
-window.addEventListener('load', function () {
-      $(".loading").fadeOut();
-})
+// window.addEventListener('load', function () {
+//       $(".loading").fadeOut();
+// })
 // --------- Preloader
 
 // ------------------------------------------------ Menu
