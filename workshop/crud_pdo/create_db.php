@@ -1,6 +1,4 @@
-<?php session_start(); ?>
-
-<?php
+<?php session_start();
 $server = $_SESSION['server'];
 $user = $_SESSION['user'];
 $pass = $_SESSION['pass'];
@@ -14,6 +12,10 @@ try {
     $sql = "CREATE DATABASE IF NOT EXISTS $dbname";
     $conn->exec($sql);
     echo "Database $dbname has created <br>";
+
+    $sql = "USE DATABASE $dbname";
+    $conn->exec($sql);
+
     header("refresh:5; connection.php");
 
 } catch (Exception $ex) {

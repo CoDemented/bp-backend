@@ -1,21 +1,32 @@
-<?php session_start(); ?>
-
-<?php
+<?php session_start();
 $server = $_SERVER['SERVER_NAME'];
 $user = 'root';
 $pass = '';
-$dbname = 'Alizeh2';
+
+$dbname = 'myDatabase02';
+$table_name = 'userss';
+
 
 $_SESSION['server'] = $server;
 $_SESSION['user'] = $user;
 $_SESSION['pass'] = $pass;
+
 $_SESSION['dbname'] = $dbname;
+$_SESSION['table_name'] = $table_name;
 
 try {
 
     $conn = new PDO("mysql:host=$server; dbname=$dbname", $user, $pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Database $dbname Connected <br /><br />";
+
+    ?>
+    <script>
+        const result = document.querySelector('.dnone-2s');
+        setTimeout(() => {
+            result.style.display = 'none';
+        }, 2000);
+    </script>
+    <?php
 
 } catch (Exception $ex) {
 
