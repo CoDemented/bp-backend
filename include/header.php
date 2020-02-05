@@ -127,8 +127,9 @@ function BR($count=1){
                                 <li class="dropdown">
                                 <li><a href="<?php echo _phpAdvance; ?>Access-Modifiers.php">Access
                                         Modifiers</a></li>
-                                <li><a href="<?php echo _phpAdvance; ?>class.php">CLASS</a></li>
-                                <li><a href="<?php echo _phpAdvance; ?>object.php">OBJECT</a></li>
+                                <li><a href="<?php echo _phpAdvance; ?>filter-var.php">filter_var</a></li>
+                                <li><a href="<?php echo _phpAdvance; ?>class.php">class</a></li>
+                                <li><a href="<?php echo _phpAdvance; ?>object.php">object</a></li>
                                 <li><a href="<?php echo _phpAdvance; ?>sessions/index.php">SESSIONS</a></li>
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button"

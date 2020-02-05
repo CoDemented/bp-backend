@@ -2,16 +2,24 @@
     include_once 'connection.php';
 
 //----------------------------------------------- INSERT
-if (isset($_POST['sub'])) {
-    $un = $_POST['un'];
-    if ($un == NULL){
-        $res = 'Enter name';
-    }
-    else {
-        insert($un);
-        $res = 'Added';
-    }
-}
+//if (isset($_POST['sub'])) {
+//    $un = $_POST['un'];
+//    if (!empty($un)){
+//        insert($un);
+//        $res = 'Added';
+//    }
+//    else {
+//        $res = 'Enter name';
+//    }
+//}
+
+$email = 'test@gmail.com';
+
+if (filter_var($email, FILTER_VALIDATE_EMAIL) == true)
+    echo 'right email';
+else
+    echo 'wrong email';
+
 
 
 //---------------------------------------------------------- UPDATE
